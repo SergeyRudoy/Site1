@@ -1,0 +1,41 @@
+#header__flying-tags .transform-enabled:not(:hover)
+{ animation: p-1 0.5s  ease-out both; }
+
+@keyframes p-1 {
+ from { transform: rotate(0deg); }
+ to { transform: rotate(740deg); } 
+}
+
+#header__flying-tags p:nth-child(2):active
+{ animation: p-2 0.7s linear infinite; }
+
+@keyframes p-2 {
+ from { transform: rotate(0deg); }
+ to { transform: rotate(360deg); } 
+}
+
+#header__flying-tags p:nth-child(4):hover 
+{ transform: scale(2,2); transition-duration: 0.5s; }
+
+#header__flying-tags p:nth-child(5):hover
+{ animation: p-5 0.4s linear;
+  transition: opacity 0.4s linear;
+  opacity: 0;  }
+
+@keyframes p-5 {
+    0% { transform: translate(0, 0); }
+    50%{ transform: translate(-30px, -20px); }
+	100%{ transform: translate(-100px, -50px); }
+}
+
+
+#header__flying-tags p:nth-child(6):hover
+{ transform: scale(1.3,1.3); }
+             #header__flying-tags p:nth-child(6):hover span { display: inline; }
+
+
+
+
+
+
+

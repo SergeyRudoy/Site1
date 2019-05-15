@@ -1,0 +1,69 @@
+@media (max-width: 1900px) {
+  #header__flying-tags p:nth-child(4) { left: 40%; bottom: 100px; }
+}
+
+
+@media (max-width: 1366px) {
+  .container { max-width: 1024px; }
+  .price-list__container_item-place { width: 1024px; position: relative; margin-top: 50%; }
+  #header__top-info_menu-button_fullscreen-nav { display: none; }
+  #header__top-info_menu-button { display: block; }
+  header { background-position: -600px 100%; }
+  #main__gradient-price_float-background { opacity: 0.3; }
+  #header__flying-tags p:nth-child(4) { left: 35%; bottom: 100px; }
+  #main__my-work_container { display: grid; grid-template-columns: 50% 50%; grid-template-rows: auto; justify-items: center;}
+}
+
+
+@media (max-width: 1024px) {
+	main, header, .container { max-width: 1024px; min-width: 640px; }
+  .price-list__container_item-place { width: 640px;  margin-top: 10%; transform: translateY(0); }
+	header { background-image: url(../img/header-tablet.png); background-position: 100%; }
+	#profile h1 { font-size: 54px; }
+	#profile p { font-size: 18px; }
+  #header__flying-tags { display: none; }
+}
+
+@media (max-width: 810px) {
+  #profile h1 { font-size: 35px; }
+	#profile p { font-size: 14px; width: 200px;}
+	#profile .orange-button { position: absolute; top: -60px; width: 230px; }
+}
+
+@media (max-width: 700px) {
+	#header__callme { margin-right: 35px; }
+}
+
+@media (max-width: 640px)  {
+  p, h1 { margin-right: 20px; }
+  main, header { min-width: 320px; max-width: 640px; }
+  header { background-image: none; height: 577px; }
+  .price-list__container_item-placez { width: 320px; margin: 30% 0 0 0; font-size: 15px; }
+  .price-list__container_item-place_item, #call-request__container_item_details { width: 300px; }
+  #call-request__container_item_details { top: 35%; }
+  #header__top-info { width: 320px; padding: 0; margin: 10px auto 0px; }
+  #header__top-info_menu-button { margin-left: 20px; margin-top: 3px; }
+  .container { min-width: 320px; max-width: 320px; }
+  #profile { background-image: url('../img/header-mobile.png'); background-repeat: no-repeat; 
+  margin: 0 auto; padding: 0; height: auto; }
+  #header__callme { margin-right: 20px; }
+  #header__callme p { font-size: 18px; margin-right: 20px; }
+  #header__callme .header__callme_call-request, #main__gradient-price_main__gradient-price_main__gradient-price_float-background { display: none; }
+  .header__callme_call-request_mobile { display: inline; }
+  #main__gradient-price { height: 100%; }
+  #main__gradient-price_price-section h2 { font-size: 36px; }
+  #main__gradient-price_price-section h2, #main__gradient-price_price-section p { padding: 0; }
+  #profile h1 { font-size: 35px; padding: 0 10px 0 10px; text-align: center; margin-bottom: 15px; }
+  #profile p { font-size: 14px; width: 200px; padding: 0 10px 0 10px; }
+  #profile .orange-button { position: relative; width: 320px; margin: 390px 0 0; font-size: 28px; }
+  #footer__footer-container { display: block; margin-top: 10px; }
+  #main__my-work h2, #main__demonstration-section h2 { margin-top: 50px; font-size: 30px; }
+  #main__my-work_container { display: flex; flex-wrap: wrap; }
+  .main__my-work_container_block { width: 320px; height: 150px; margin-top: 50px; }
+  #main__my-work_price-button { width: 320px; font-size: 28px; margin-top: 50px; }
+  .slider-item img{ width: 320px; }
+  #footer__footer-container nav { float: none; text-align: center; }
+  #footer__footer-container nav a { display: inline-block; margin: 20px 10px 20px 0; }
+  #footer__footer-container_footer-contacts p { font-size: 20px; margin-bottom: 20px; }
+  .header__callme_call-request { margin: 0; padding: 0; width: 320px; }
+}
