@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ВЕБ - РАЗРАБОТКА</title>
+<link rel="stylesheet" href="css/main-styles.css">
+<link rel="stylesheet" href="fonts/roboto.css">
+<link rel="stylesheet" href="fonts/LigatureSymbols/style.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/transform.css">
+<link rel="stylesheet" href="img/sprite.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script src="java/jquery-3.3.1.min.js"></script>
+<script src="java/jquery-migrate-1.4.1.min.js"></script>
+<script src="java/animation.js"></script>
+<script src="slick/slick.min.js"></script>
+<style>
+
+
+</style>
+</head>
+<body>
+	<a href="#header__top-info" id="up-arrow"><img src="img/left-arrow.png" alt="#"></a>
+	<section id="call-request">
+		<div class="container" id="call-request__container">
+			<div class="call-request__container_item">
+				<form id="call-request__container_item_details">
+
+					<h3>Ваше имя</h3>
+					<input type="text" required name="FIO" class="name">
+					<h3>Телефон</h3>
+					<input type="tel" required name="tel-number" class="number">
+					<h3>Электронная почта*</h3>
+					<input type="email" name="email" class="email-adress">
+					<h3>Дополнительные комментарии*</h3>
+					<textarea class="comments" form="call-request__container_item_details"></textarea>
+					<p>*Поля не обязательные для заполнения</p>
+					<button type="submit" class="confirm">ЗАКАЗАТЬ ЗВОНОК</button>
+
+				</form>
+			</div>
+		</div>
+	</section>
+	<section id="price-list">
+		<div class="container" id="price-list__container">
+			<div class="price-list__container_item-place container">
+				<div class="price-list__container_item-place_item">
+				<div class="price-name"><h3>Одностраничный сайт (Landing-page)</h3></div>
+				<div class="price-details">
+					<div>
+						<p>Эффективное и простое решения для продвижения товаров и услуг.</p>
+						<p>Удобство для пользователей. Такой сайт позволяет посетителям в кратчайшие сроки ориентироваться в навигации и выполнять необходимые функции. 
+						</p>
+						<p>Результативность любой рекламной деятельности зависит от того, познакомится ли вообще потенциальный покупатель с предложением. Поэтому посадочная целевая страница должна быть доступна и удобна для вашего пользователя.</p>
+					</div>
+				</div>
+				<div class="price-place"><strong>0 руб.</strong> </div>
+			</div>
+			<div class="price-list__container_item-place_item">
+				<div class="price-name"><h3>Бизнес сайт</h3></div>
+				<div class="price-details">
+					<div>
+						<p>Сайт для бизнеса - ответственный шаг для любой компании, так как сегодня это не просто "лицо компании" в интернете, но и инструмент продаж, приносящий прибыль.</p>
+						<p>По сравнению с сайтом-визиткой, бизнес-сайт имеет более расширенный функционал и структуру. В него могут быть включены фотогалереи, слайдеры, страницы отзывов клиентов.
+						</p>
+						<p>Бизнес-сайт - это серьёзный интернет-портал, который позволит компании прочно закрепить своё положение на рынке, усилив присутствие в интернете.</p>
+					</div>
+				</div>
+				<div class="price-place"><strong>0 руб.</strong></div>
+			</div>
+			      <button type="button" class="header__callme_call-request">
+        ЗАКАЗАТЬ ЗВОНОК
+      </button>			
+			</div>
+		
+		</div>
+	</section>
+
+
+  <header>
+  	<div id="header__flying-tags">
+      <p>&lt;div&gt;</p>
+  		<p>&lt;/div&gt;</p>
+  		<p>&lt;/&gt;</p>
+  		<p>&lt;/&gt;</p>
+  		<p>&#123;&#125;</p>
+  		<p>&#123;<span>...</span>&#125;</p>
+  		<p>#</p>
+  	</div>
+  <div class="container" id="header__top-info">
+    <nav>
+    	<div id="header__top-info_menu-button_fullscreen-nav">
+      <a href="#main__my-work">Услуги</a>
+      <a href="#main__demonstration-section" class="active-link">Портфолио</a>
+      <a href="#price-list" class="price-link">Стоимость</a>
+        </div>
+        <button type="button" id="header__top-info_menu-button"></button>
+        <div id="header__top-info_menu-button_mobile-nav">
+      <a href="#main__my-work">Услуги</a>
+      <a href="#main__demonstration-section" class="active-link">Портфолио</a>
+      <a href="#price-list" class="price-link">Стоимость</a>
+        </div>
+    </nav>
+    <div id="header__callme">
+      <p>
+        +7 (968) 616-67-35
+      </p>
+      <button type="button" class="header__callme_call-request">
+        ЗАКАЗАТЬ ЗВОНОК
+      </button>
+      <button type="button" class="header__callme_call-request_mobile">
+        <span class="icon">phone</span>
+      </button>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="container" id="profile">
+  	<h1>Сергей Рудой</h1>
+  	<P>Frontend-разработчик и веб-верстальщик</P>
+  	<button type="button" class="orange-button" id="header__profile_button">Узнать больше</button>
+  </div>
+</header>
+
+<main> 
+     <section id="main__my-work" class="container">
+     	<div>
+     		<h2>Что я делаю</h2>
+     	</div>
+     	<div id="main__my-work_container">
+     		<div class="main__my-work_container_block">
+     			<div class="main__my-work_container_block_img-slot"><img src="img/tools-and-utensils.png" alt="#"></div>
+     			<div class="main__my-work_container_block_text-slot"><p>Вёрстка лендинг–страниц и сайтов любой сложности</p></div>
+     		</div>
+     		<div class="main__my-work_container_block">
+     			<div class="main__my-work_container_block_img-slot"><img src="img/responsive.png" alt="#"></div>
+     			<div class="main__my-work_container_block_text-slot"><p>Адаптивная вёрстка под все браузеры и устройства</p></div>
+     		</div>
+     		<div class="main__my-work_container_block">
+     			<div class="main__my-work_container_block_img-slot"><img src="img/programming.png" alt="#"></div>
+     			<div class="main__my-work_container_block_text-slot"><p>Frontend–разработка и программирование</p></div>
+     		</div>
+     		<div class="main__my-work_container_block">
+     			<div class="main__my-work_container_block_img-slot"><img src="img/coding.png" alt="#"></div>
+     			<div class="main__my-work_container_block_text-slot"><p>Исправление и доработка существующей вёрстки</p></div>
+     		</div>
+     	</div>
+     	<button type="button" class="orange-button" id="main__my-work_price-button">Узнать стоимость</button>
+     </section>
+
+    <section id="main__demonstration-section">
+      <div class="container">
+    		<div><h2>Примеры моих работ</h2></div>
+         <div class="main__demonstration-section_slider regular slider">
+            <div class="slider-item"><a href="#"><img src="img/stroy_service.png" alt="#"></a><h3>Сайт магазина "Строй-Сервис</h3></div>
+            <div class="slider-item"><a href="#"><img src="img/vera.png" alt="#"></a><h3>Сайт психолога Веры Антоновой</h3></div>
+            <div class="slider-item"><a href="#"><img src="img/children.png" alt="#"></a><h3>Сайт магазина детской одежды</h3></div>
+            <div class="slider-item"><a href="#"><img src="img/fishing.png" alt="#"></a><h3>Сайт магазина "Рыболов"</h3></div>
+         </div>
+       </div>
+	</section>
+	<footer>
+		<div class="container" id="footer__footer-container">
+			<nav>
+	           <a href="#main__my-work">Услуги</a>
+               <a href="#main__demonstration-section" class="active-link">Портфолио</a>
+               <a href="#price-list" class="price-link">Стоимость</a>
+			</nav>
+			<div id="footer__footer-container_footer-contacts">
+				<p><span class="icon">phone</span> +7 (968) 616 67-35 </p>
+				<p><span class="icon">mail</span> RudoySergey.web@yandex.ru </p>
+			</div>
+			<div id="footer__footer-container_footer-social">
+				      <button type="button" class="header__callme_call-request">
+                        ЗАКАЗАТЬ ЗВОНОК
+                      </button>
+                      <br>
+                      <a href="#" class="icon-vk"></a>
+                      <a href="#" class="icon-facebook"></a>
+                      <a href="#" class="icon-twitter"></a>
+                      <a href="#" class="icon-instagram"></a>
+                      <div class="clear"></div>
+			</div>
+		</div>
+	</footer>
+
+</main>
+
+
+
+</body>
+</html>
