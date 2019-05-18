@@ -11,27 +11,29 @@
   header { background-position: -600px 100%; }
   #main__gradient-price_float-background { opacity: 0.3; }
   #header__flying-tags p:nth-child(4) { left: 35%; bottom: 100px; }
-  #main__my-work_container { display: grid; grid-template-columns: 50% 50%; grid-template-rows: auto; justify-items: center;}
+  #main__my-work_container { display: -ms-grid; display: grid; -ms-grid-columns: 50% 50%; grid-template-columns: 50% 50%; -ms-grid-rows: auto; grid-template-rows: auto; justify-items: center;}
+  #main__my-work_container > *:nth-child(1) { -ms-grid-row: 1; -ms-grid-column: 1;}
+  #main__my-work_container > *:nth-child(2) { -ms-grid-row: 1; -ms-grid-column: 2;}
 }
 
 
 @media (max-width: 1024px) {
-	main, header, .container { max-width: 1024px; min-width: 640px; }
-  .price-list__container_item-place { width: 640px;  margin-top: 10%; transform: translateY(0); }
-	header { background-image: url(../img/header-tablet.png); background-position: 100%; }
-	#profile h1 { font-size: 54px; }
-	#profile p { font-size: 18px; }
+  main, header, .container { max-width: 1024px; min-width: 640px; }
+  .price-list__container_item-place { width: 640px;  margin-top: 10%; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+  header { background-image: url(../img/header-tablet.png); background-position: 100%; }
+  #profile h1 { font-size: 54px; }
+  #profile p { font-size: 18px; }
   #header__flying-tags { display: none; }
 }
 
 @media (max-width: 810px) {
   #profile h1 { font-size: 35px; }
-	#profile p { font-size: 14px; width: 200px;}
-	#profile .orange-button { position: absolute; top: -60px; width: 230px; }
+  #profile p { font-size: 14px; width: 200px;}
+  #profile .orange-button { position: absolute; top: -60px; width: 230px; }
 }
 
 @media (max-width: 700px) {
-	#header__callme { margin-right: 35px; }
+  #header__callme { margin-right: 35px; }
 }
 
 @media (max-width: 640px)  {
@@ -58,7 +60,7 @@
   #profile .orange-button { position: relative; width: 320px; margin: 390px 0 0; font-size: 28px; }
   #footer__footer-container { display: block; margin-top: 10px; }
   #main__my-work h2, #main__demonstration-section h2 { margin-top: 50px; font-size: 30px; }
-  #main__my-work_container { display: flex; flex-wrap: wrap; }
+  #main__my-work_container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .main__my-work_container_block { width: 320px; height: 150px; margin-top: 50px; }
   #main__my-work_price-button { width: 320px; font-size: 28px; margin-top: 50px; }
   .slider-item img{ width: 320px; }

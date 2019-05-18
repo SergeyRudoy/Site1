@@ -51,6 +51,11 @@ $(function (){
     };
   });
 
+  $('#header__top-info_menu-button_mobile-nav a').click(function(){
+    $('#header__top-info_menu-button_mobile-nav').hide();
+  });
+
+
 
 
 
@@ -65,7 +70,8 @@ $(function (){
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev arrow"><img src="img/left-arrow.png"></button>',
         nextArrow: '<button type="button" class="slick-next arrow"><img src="img/left-arrow.png"></button>',
-        infinite: false,
+        infinite: true,
+        variableWidth: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
